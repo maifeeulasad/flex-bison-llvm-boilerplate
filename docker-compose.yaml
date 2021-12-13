@@ -1,0 +1,10 @@
+version: '0.1'
+
+services:
+  compilerdev:
+    container_name: compiler_dev
+    image: examples/fb
+    volumes:
+      - .:/compiler_dev
+    build:
+      context: .
